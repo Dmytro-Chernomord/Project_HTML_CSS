@@ -1,0 +1,10 @@
+%before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+  width: 60px;
+  height: 1px;
+  margin-top: -1px;
+  background: $prime-black-color;
+}

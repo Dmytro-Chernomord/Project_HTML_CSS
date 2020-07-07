@@ -1,0 +1,103 @@
+.features {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-left: 115px;
+    padding-right: 85px;
+  }
+  &-info {
+    position: relative;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    @media screen and (max-width: 767px) {
+    }
+
+    position: relative;
+    &:before {
+      @extend %before;
+    }
+  }
+  &-title {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+    margin-bottom: 20px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      padding-right: 269px;
+    }
+  }
+  &-text {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: $primary-text-color;
+    margin-bottom: 79px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      padding-right: 189px;
+    }
+  }
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      padding-left: 240px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 130px;
+    }
+  }
+  &-score {
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 1.35;
+    letter-spacing: 0.05em;
+    color: $prime-black-color;
+    display: block;
+    text-align: center;
+
+    &-text {
+      font-weight: 600;
+      font-size: 11px;
+      line-height: 1.36;
+      color: $prime-black-color;
+      white-space: pre-line;
+      display: block;
+      text-align: center;
+    }
+    &-sub {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 1.3;
+      color: $prime-orange-color;
+      vertical-align: super;
+    }
+  }
+  &-item {
+    background-color: $background-color;
+    outline: 1px solid black;
+    width: calc((100% - 30px * 1) / 2);
+    height: 133px;
+    padding: 20px;
+    margin-bottom: 30px;
+    display: inline-block;
+    &:nth-child(odd) {
+      margin-right: 30px;
+      margin-top: -35px;
+    }
+    // &:nth-child(odd) {
+    //   margin-right: 30px;
+    // }
+    // &:nth-child(2) {
+    //   margin-top: 35px;
+    // }
+    // &:nth-last-child(2) {
+    //   margin-top: -35px;
+    // }
+  }
+}
