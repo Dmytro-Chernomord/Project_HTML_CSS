@@ -1,6 +1,4 @@
-
-@import './var.scss';
-@import './basic-reset.scss';
-@import './visually-hiden.scss';
-@import './components/container';
-
+@import './utils/var.scss';
+@import './base/basic-reset.scss';
+@import './utils/visually-hiden.scss';
+@import './components/container.scss';
