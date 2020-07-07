@@ -1,0 +1,56 @@
+.menu-button {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: 15px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  @media screen and (min-width: 481px) {
+    display: none;
+  }
+
+  & .icon-burger {
+    fill: $prime-white-color;
+    display: block;
+  }
+
+  & .icon-cross {
+    fill: $prime-black-color;
+    display: none;
+  }
+
+  &.is-open .icon-cross {
+    display: block;
+  }
+  &.is-open .icon-burger {
+    display: none;
+  }
+}
+
+.menu {
+  display: flex;
+  background-color: $prime-white-color;
+  padding-left: 40px;
+  padding-top: 118px;
+  width: 337px;
+  height: 796px;
+
+  &.is-open {
+    display: block;
+  }
+
+  @media screen and (max-width: 480px) {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.39;
+  letter-spacing: 0.1em;
+}
