@@ -1,9 +1,6 @@
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
 
-// Стили для файла с примером HTML-фрагмента
 @import './var.scss';
 @import './basic-reset.scss';
 @import './visually-hiden.scss';
+@import './components/container';
+
