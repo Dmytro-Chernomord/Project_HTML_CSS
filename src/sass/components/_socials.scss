@@ -4,7 +4,9 @@
 .subtitle {
   padding-bottom: 20px;
 }
-
+.section-title {
+  padding-bottom: 44px;
+}
 .team-cards {
   display: flex;
   flex-wrap: wrap;
@@ -19,8 +21,6 @@
   align-items: center;
 }
 
-.social-link {
-}
 .card-content {
   padding-top: 30px;
 }
