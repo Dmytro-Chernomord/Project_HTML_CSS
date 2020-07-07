@@ -4,7 +4,7 @@
 
 .team-cards {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .flex-card {
@@ -14,4 +14,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.card-content {
+  padding-top: 30px;
 }
