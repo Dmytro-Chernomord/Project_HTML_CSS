@@ -1,8 +1,28 @@
 .team {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    padding-left: 115px;
+    padding-right: 85px;
+  }
   background-color: #f7f7f7;
 }
+
 .subtitle {
   padding-bottom: 20px;
+  position: relative;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  @media screen and (max-width: 767px) {
+  }
+
+  position: relative;
+  &:before {
+    @extend %before;
+  }
 }
 .subtitle::before {
   content: '';
@@ -39,11 +59,19 @@
 .worker-name {
   text-align: center;
   margin-bottom: 8px;
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  color: #303030;
 }
 
 .position {
   text-align: center;
   margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+  color: #ff6c00;
 }
 
 .social-item {
