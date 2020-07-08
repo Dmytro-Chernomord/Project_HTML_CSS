@@ -57,3 +57,24 @@
   line-height: 1.39;
   letter-spacing: 0.1em;
 }
+
+// .backdrop {
+//   opacity: 0;
+//   pointer-events: none;
+//   transform: scale(2);
+// }
+
+// .backdrop.is-open {
+//   position: fixed;
+//   display: flex;
+//   top: 0;
+//   left: 0;
+//   bottom: 0;
+//   right: 0;
+//   z-index: 2;
+//   background-color: rgba(49, 48, 46, 0.5);
+//   transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+//   transform: scale(1);
+//   opacity: 1;
+//   overflow-y: scroll;
+// }
