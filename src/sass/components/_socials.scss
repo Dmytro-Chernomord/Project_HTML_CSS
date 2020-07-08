@@ -1,4 +1,4 @@
-.team-container {
+.team {
   background-color: #f7f7f7;
 }
 .subtitle {
@@ -34,4 +34,33 @@
 
 .card-content {
   padding-top: 30px;
+}
+
+.worker-name {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.position {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.social-link {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: transparent;
+  border-radius: 50%;
 }
