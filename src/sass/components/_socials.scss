@@ -1,0 +1,37 @@
+.team-container {
+  background-color: #f7f7f7;
+}
+.subtitle {
+  padding-bottom: 20px;
+}
+.subtitle::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 2px;
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+  background-color: rgba(157, 164, 189, 0.6);
+}
+
+.section-title {
+  padding-bottom: 44px;
+}
+.team-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-card {
+  max-width: 418px;
+}
+.socials-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-content {
+  padding-top: 30px;
+}
