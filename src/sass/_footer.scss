@@ -119,16 +119,7 @@
 		border-bottom: 1px solid $prime-white-color;
 	}
 }
-.button-dark {
-	display: inline-block;
-	color: $prime-white-color;
-	@media screen and (min-width: 768px) {
-		text-align: left;
-	}
-	&:hover {
-		background-color: $prime-orange-color;
-	}
-}
+
 .footer form {
 	padding: 0;
 }
