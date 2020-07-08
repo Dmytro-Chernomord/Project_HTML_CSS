@@ -177,8 +177,8 @@
   vertical-align: middle;
 }
 
-.features-text.worktime-text {
-    @extend %before;
+.features-info.worktime-text {
+  @extend %before;
   color: $prime-white-color;
 }
 .copyright {
@@ -202,7 +202,7 @@
   }
 }
 .social-footer {
-    @extend %before;
+  @extend %before;
   margin-left: auto;
   display: flex;
   margin-bottom: 20px;
