@@ -86,26 +86,9 @@
 		}
 	}
 }
-// Удалить класс так как есть в стандартных. Но ОСТАВИТЬ ВЫСОТУ
-.button-light {
+
+.button-light.is-menu {
 	width: 194px;
-	padding-top: 12px;
-	padding-bottom: 12px;
-	border: 1px solid $prime-orange-color;
-	border-radius: 25px;
-	background-color: transparent;
-	font-weight: 600;
-	font-size: 12px;
-	line-height: 1.33;
-	letter-spacing: 0.09em;
-	text-transform: uppercase;
-	color: $prime-black-color;
-	cursor: pointer;
-	&:hover,
-	&:focus {
-		color: $prime-white-color;
-		background-color: $prime-orange-color;
-	}
 }
 .contact {
 	margin-bottom: 64px;
