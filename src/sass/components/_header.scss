@@ -1,3 +1,15 @@
+.main-nav {
+	display: flex;
+}
+
+.side-bar {
+	width: 155px;
+	height: 680px;
+	left: 0px;
+	top: 0px;
+	background: red;
+}
+
 .header {
 	padding: 48px 31px;
 	top: 0;
@@ -9,6 +21,12 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+
+	background-color: black;
+
+	@media screen and (min-width: 768px) {
+		max-height: 680px;
+	}
 
 	@media screen and (min-device-pixel-ratio: 2),
 		screen and (min-resolution: 192dpi),
@@ -39,10 +57,17 @@
 			url(/images/hero-section/desktop2-hero2x-min.jpg), url(/images/hero-section/desktop1-hero2x-min.jpg);
 	}
 }
+
 .header-top {
 	display: flex;
 	align-items: center;
 	margin-bottom: 120px;
+}
+.logo {
+	@media screen and (min-width: 768px) {
+		position: absolute;
+		left: 20px;
+	}
 }
 
 .header-midle {
