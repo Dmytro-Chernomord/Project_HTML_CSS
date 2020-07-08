@@ -1,77 +1,7 @@
-.team {
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    padding-left: 115px;
-    padding-right: 85px;
-  }
-  background-color: #f7f7f7;
-}
-
-.subtitle {
-  padding-bottom: 20px;
-  position: relative;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  @media screen and (max-width: 767px) {
-  }
-
-  position: relative;
-  &:before {
-    @extend %before;
-  }
-}
-.subtitle::before {
-  content: '';
-  display: inline-block;
-  vertical-align: middle;
-  margin-bottom: 2px;
-  width: 60px;
-  height: 1px;
-  margin-right: 20px;
-  background-color: rgba(157, 164, 189, 0.6);
-}
-
-.section-title {
-  padding-bottom: 44px;
-}
-.team-cards {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.flex-card {
-  max-width: 418px;
-}
 .socials-flex {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.card-content {
-  padding-top: 30px;
-}
-
-.worker-name {
-  text-align: center;
-  margin-bottom: 8px;
-  font-size: 18px;
-  line-height: 1.4;
-  letter-spacing: 0.02em;
-  color: #303030;
-}
-
-.position {
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: 14px;
-  line-height: 1.35;
-  letter-spacing: 0.02em;
-  color: #ff6c00;
 }
 
 .social-item {
@@ -80,6 +10,10 @@
   align-items: center;
   border-radius: 50%;
   background-color: #ffffff;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .social-link {
@@ -91,4 +25,10 @@
   height: 44px;
   background-color: transparent;
   border-radius: 50%;
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: #ffffff;
+  fill: #ff6c00;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
