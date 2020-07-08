@@ -1,54 +1,72 @@
 <footer class="footer">
   <div class="container">
-    <div class="footer-form">
-      <p class="footer-title">Онлайн-запись</p>
-      <form action="">
-        <label class="checkbox">
-          <input type="text" />
-          <span class="checkbox-name">Имя</span>
-        </label>
-        <label class="checkbox">
-          <input type="tel" />
-          <span class="checkbox-name">Телефон</span>
-        </label>
-        <textarea
-          class="message"
-          name="message"
-          id="message"
-          rows="10"
-          placeholder="Сообщение"
-        >
-        </textarea>
-      </form>
-    </div>
-    <div class="contacts">
-      <p class="footer-title">Контакты</p>
-      <address class="address">
-        <p class="footer-contacts">
-          <svg class="footer-icon"><use href="#"></use></svg> ул. Васильковая,
-          7А, Киев, 08132
-        </p>
-        <a class="footer-contacts" href="tel:380441111111"
-          ><svg class="footer-icon"><use href="#"></use></svg> +38 044 111 11
-          11</a
-        >
-        <a class="footer-contacts" href="mailto:barbershop@email.com"
-          ><svg class="footer-icon"><use href="#"></use></svg>
-          barbershop@email.com</a
-        >
-      </address>
-      <p class="worktime">время работы</p>
-      <p class="footer-contacts">Ежедневно с 9:00 до 22:00</p>
+    <div class="form-contacts">
+      <div class="footer-form" id="online-form">
+        <h2 class="section-title footer-title">Онлайн-запись</h2>
+        <form id="form">
+          <label class="checkbox">
+            <input type="text" />
+            <span class="checkbox-name">Имя*</span>
+          </label>
+          <label class="checkbox">
+            <input type="tel" />
+            <span class="checkbox-name">Телефон*</span>
+          </label>
+          <textarea
+            class="message"
+            name="message"
+            type="text"
+            id="message"
+            cols="30"
+            placeholder="Сообщение"
+          >
+          </textarea>
+          <button class="button-dark">отправить</button>
+        </form>
+      </div>
+      <div class="footer-contacts">
+        <h2 class="section-title footer-title">Контакты</h2>
+        <div class="contacts-div">
+          <address class="address-block">
+            <p class="address">
+              <svg class="footer-icon" width="24px" height="24px">
+                <use
+                  href="./images/footer-section/footer-icons.svg#map"
+                ></use></svg>ул. Васильковая, 7А, Киев, 08132
+            </p>
+            <a class="address" href="tel:380441111111"
+              ><svg class="footer-icon" width="24px" height="24px">
+                <use
+                  href="./images/footer-section/footer-icons.svg#phone"
+                ></use></svg>+38 044 111 11 11</a
+            >
+            <a class="address mail" href="mailto:barbershop@email.com"
+              ><svg class="footer-icon" width="24px" height="24px">
+                <use
+                  href="./images/footer-section/footer-icons.svg#mail"
+                ></use></svg>barbershop@email.com</a>
+          </address>
+          <div class="worktime">
+            <p class="features-info worktime-text">время работы</p>
+            <p class="address">Ежедневно с 9:00 до 22:00</p>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="copyright">
-      <svg class="copyright-icon">
-        <use href="#"></use>
-      </svg>
       <span class="copyright-text">
-        Copyright 2020
+        <svg class="copyright-icon" width="12px" height="12px">
+          <use href="./images/footer-section/footer-icons.svg#group"></use>
+          </svg>Copyright 2020
       </span>
-      <a href="#" class="social-link">Instagram</a>
-      <a href="#" class="social-link">Facebook</a>
+      <ul class="social-footer">
+        <li class="social-footer-item">
+          <a href="#" class="social-footer-link">Instagram</a>
+        </li>
+        <li class="social-footer-item">
+          <a href="#" class="social-footer-link">Youtube</a>
+        </li>
+      </ul>
     </div>
   </div>
 </footer>
