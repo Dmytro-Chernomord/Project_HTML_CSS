@@ -24,6 +24,10 @@
 .footer-title {
 	color: $prime-white-color;
 	margin-bottom: 40px;
+	font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
+    letter-spacing: 0.05em;
 }
 
 .footer-form,
@@ -168,32 +172,49 @@
 	vertical-align: middle;
 }
 
-.features-info.worktime-text {
+.features-info {
+	&::before {
 	@extend %before;
+	background-color: rgba(157, 164, 189, 0.4);
+}
 	color: $prime-white-color;
 }
 .copyright {
 	display: flex;
 	text-align: left;
+	// width: 100%;
 
 	font-weight: 600;
 	font-size: 11px;
 	line-height: 1.36;
 	letter-spacing: 0.2em;
 
-	@media screen and (min-width: 230px) and (max-width: 767px) {
+	@media screen and (min-width: 320px) and (max-width: 767px) {
+		max-width: 320px;
 		padding: 44px 31px;
 		flex-wrap: wrap-reverse;
 	}
 	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		max-width: 768px;
+
 		padding: 56px 39px;
 	}
 	@media screen and (min-width: 1200px) {
+		max-width: 1200px;
+
 		padding: 56px 55px;
 	}
 }
 .social-footer {
+	position: relative;
+	&::before{
 	@extend %before;
+	// justify-content: center;
+	// text-align: center;
+	}
+	text-align: center;
+	vertical-align: middle;
+	justify-content: center;
 	margin-left: auto;
 	display: flex;
 	margin-bottom: 20px;
