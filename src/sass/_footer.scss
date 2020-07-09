@@ -158,7 +158,7 @@
 	@media screen and (min-width: 1200px) {
 		margin-bottom: 70px;
 	}
-	& > a {
+	& > .address {
 		&:hover,
 		&:focus {
 			color: $prime-orange-color;
@@ -173,6 +173,7 @@
 	font-family: Open Sans;
 	font-size: 18px;
 	line-height: 1.67;
+	cursor: pointer;
 
 	@media screen and (min-width: 768px) {
 		max-width: 270px;
@@ -180,6 +181,11 @@
 
 	&:not(:last-child) {
 		margin-bottom: 20px;
+	}
+
+	&.time {
+		padding: 0;
+		cursor: auto;
 	}
 }
 
