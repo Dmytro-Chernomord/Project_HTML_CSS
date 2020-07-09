@@ -1,6 +1,6 @@
 .card {
 	width: 100%;
-	background-color: #f7f7f7;
+	background-color: $background-color;
 	margin: 0 auto;
 }
 
@@ -24,7 +24,7 @@
 	font-size: 18px;
 	line-height: 1.4;
 	letter-spacing: 0.02em;
-	color: #303030;
+	color: $prime-black-color;
 }
 
 .position {
@@ -33,5 +33,5 @@
 	font-size: 14px;
 	line-height: 1.35;
 	letter-spacing: 0.02em;
-	color: #ff6c00;
+	color: $prime-orange-color;
 }

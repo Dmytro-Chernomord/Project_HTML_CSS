@@ -5,11 +5,13 @@
 }
 
 .social-item {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border-radius: 50%;
-	background-color: #ffffff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: $prime-white-color;
+
 }
 
 .social-item:not(:last-child) {
@@ -30,6 +32,9 @@
 }
 .social-link:hover,
 .social-link:focus {
-	background-color: #ffffff;
-	fill: #ff6c00;
+
+  background-color: $prime-white-color;
+  fill: $prime-orange-color;
+ 
+
 }
