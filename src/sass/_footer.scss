@@ -240,7 +240,7 @@
 	--color1: currentColor;
 }
 
-.features-info {
+.features-info.worktime-text {
 	&::before {
 		@extend %before;
 		background-color: $checkbox-color;
