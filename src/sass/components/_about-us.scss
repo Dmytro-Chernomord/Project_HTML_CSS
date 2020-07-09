@@ -65,6 +65,11 @@
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
 	color: $prime-black-color;
+
+	margin-bottom: 20px;
+	&::before {
+		@extend %before;
+		}
 }
 
 
@@ -78,7 +83,9 @@
 	letter-spacing: 0.05em;
 	color: $prime-black-color;
 	max-width: 330px;
-  	font-family: Raleway, sans-serif;
+	  font-family: Raleway, sans-serif;
+	  
+	  margin-bottom: 20px;
 }
 
 
