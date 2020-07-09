@@ -1,6 +1,4 @@
-
 .aboutus-img {
-
 	display: none;
 
 	@media screen and (min-width: 769px) {
@@ -49,16 +47,12 @@
 	}
 }
 
-
 .aboutus-img-photo {
-
 	width: 100%;
 	height: 100%;
 }
 
-
 .aboutus-name {
-
 	font-weight: 600;
 	font-size: 11px;
 	line-height: 1.36;
@@ -73,30 +67,44 @@
 }
 
 
-
+	&:before {
+		@extend %before;
+	}
+}
 
 .aboutus-title {
-
 	font-weight: 700;
 	font-size: 28px;
 	line-height: 1.18;
 	letter-spacing: 0.05em;
 	color: $prime-black-color;
 	max-width: 330px;
-	  font-family: Raleway, sans-serif;
-	  
-	  margin-bottom: 20px;
+
+	font-family: Raleway, sans-serif;
+	margin-bottom: 20px;
+
+
+	@media screen and (min-width: 1200px) {
+		font-size: 42px;
+		line-height: 1.09;
+		max-width: 500px;
+	}
 }
 
-
 .aboutus-text {
-
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.62;
 	letter-spacing: 0.02em;
 	color: $primary-text-color;
 	margin-bottom: 20px;
+
+	@media screen and (min-width: 1200px) {
+		font-size: 18px;
+		line-height: 1.67;
+		max-width: 500px;
+		padding-right: 20px;
+	}
 
 	&-second {
 		font-weight: 400;
@@ -105,5 +113,10 @@
 		letter-spacing: 0.02em;
 		color: $primary-text-color;
 		margin-bottom: 40px;
+
+		@media screen and (min-width: 1200px) {
+			max-width: 500px;
+			padding-right: 20px;
+		}
 	}
 }
