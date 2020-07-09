@@ -35,6 +35,9 @@
 	display: flex;
 	@media screen and (min-width: 768px) {
 		color: $prime-white-color;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
 	}
 	&.is-open {
 		display: block;
@@ -120,12 +123,14 @@
 	}
 }
 .contact {
+	@media screen and (max-width: 768px) {
+		margin-bottom: 64px;
+	}
 	@media screen and (min-width: 768px) {
 		display: flex;
 		flex-direction: column-reverse;
 	}
 
-	margin-bottom: 64px;
 	&-link {
 		font-size: 18px;
 		font-weight: 600;
@@ -147,8 +152,8 @@
 .social {
 	@media screen and (min-width: 768px) {
 		position: absolute;
-		left: 0;
-		bottom: 216px;
+		left: -100px;
+		bottom: 135px;
 		transform: rotate(-90deg);
 	}
 
@@ -158,10 +163,15 @@
 		line-height: 1.35;
 		letter-spacing: 0.2em;
 		color: $prime-black-color;
+		@media screen and (min-width: 768px) {
+			display: flex;
+		}
 	}
 	&-item-header {
 		&:not(:last-child) {
-			margin-bottom: 24px;
+			@media screen and (max-width: 768px) {
+				margin-bottom: 24px;
+			}
 		}
 	}
 
@@ -177,17 +187,3 @@
 .youtube-header {
 	margin-left: 80px;
 }
-// .backdrop.is-open {
-//   position: fixed;
-//   display: flex;
-//   top: 0;
-//   left: 0;
-//   bottom: 0;
-//   right: 0;
-//   z-index: 2;
-//   background-color: rgba(49, 48, 46, 0.5);
-//   transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
-//   transform: scale(1);
-//   opacity: 1;
-//   overflow-y: scroll;
-// }

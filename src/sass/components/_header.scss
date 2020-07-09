@@ -3,11 +3,13 @@
 }
 
 .side-bar {
-	width: 155px;
-	height: 680px;
-	left: 0px;
-	top: 0px;
-	background: red;
+	@media screen and (min-width: 768px) {
+		width: 155px;
+		height: 680px;
+		left: 0px;
+		top: 0px;
+		background: $prime-white-color;
+	}
 }
 
 .header {
@@ -60,13 +62,15 @@
 
 .header-top {
 	display: flex;
-	align-items: center;
 	margin-bottom: 120px;
 }
 .logo {
+	fill: $prime-white-color;
 	@media screen and (min-width: 768px) {
 		position: absolute;
-		left: 20px;
+		left: 32px;
+		top: 32px;
+		fill: $prime-black-color;
 	}
 }
 
