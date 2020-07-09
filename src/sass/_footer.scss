@@ -134,7 +134,9 @@
 
 	&:hover,
 	&:focus {
+
 		color: $prime-white-color;
+
 	}
 	&::placeholder {
 		color: rgba(157, 164, 189, 0.4);
@@ -171,10 +173,14 @@
 	@media screen and (min-width: 1200px) {
 		margin-bottom: 70px;
 	}
-	& > a {
+
+	& > .address {
+
+
 		transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-	}
-	& > a {
+	
+
+
 		&:hover,
 		&:focus {
 			color: $prime-orange-color;
@@ -182,21 +188,42 @@
 	}
 }
 .address {
+	position: relative;
+	padding-left: 40px;
 	display: block;
+	font-weight: 400;
 	font-family: Open Sans;
 	font-size: 18px;
 	line-height: 1.67;
+	cursor: pointer;
+
+	@media screen and (min-width: 768px) {
+		max-width: 270px;
+	}
 
 	&:not(:last-child) {
 		margin-bottom: 20px;
 	}
+
+	&.time {
+		padding: 0;
+		cursor: auto;
+	}
 }
+
+.address-element {
+	@media screen and (min-width: 768px) {
+		display: none;
+	}
+}
+
 .address.mail {
 	text-decoration: underline;
 }
 .footer-icon {
-	margin-right: 16px;
-	vertical-align: middle;
+	position: absolute;
+	top: 5px;
+	left: 0;
 	--color1: currentColor;
 }
 
@@ -229,7 +256,6 @@
 	}
 }
 .social-footer {
-	position: relative;
 	display: flex;
 	margin-left: auto;
 
@@ -238,11 +264,10 @@
 		margin-bottom: 20px;
 	}
 }
-.social-footer-item {
+
+.social-footer-link {
 	margin-left: 20px;
-	&:not(:last-child) {
-		margin-right: 20px;
-	}
+
 	&:hover,
 	&:focus {
 		color: $prime-orange-color;
@@ -251,11 +276,15 @@
 .social-footer-item.insta {
 	&::before {
 		@extend %before;
-		margin-right: 40px;
+
 	}
 }
 .copyright-text {
-	margin-right: 200px;
+	margin-right: 50%;
+
+	@media screen and (min-width: 767px) {
+		margin-right: auto;
+	}
 }
 .copyright-icon {
 	display: inline-flex;
