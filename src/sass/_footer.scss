@@ -1,6 +1,9 @@
 .footer {
+	max-width: 1200px;
 	text-align: center;
 	color: $light-grey-color;
+	margin-left: auto;
+    margin-right: auto;
 }
 .form-contacts {
 	background-color: $footer-background;
@@ -105,9 +108,7 @@
 	top: 0;
 	left: 0;
 }
-::placeholder {
-	color: rgba(157, 164, 189, 0.4);
-}
+
 .message {
 	width: 100%;
 	display: block;
@@ -121,6 +122,10 @@
 	&:hover,
 	&:focus {
 		border-bottom: 1px solid $prime-white-color;
+		color:#ffffff;
+	}
+	&::placeholder {
+		color: rgba(157, 164, 189, 0.4);
 	}
 }
 
@@ -153,6 +158,12 @@
 	@media screen and (min-width: 1200px) {
 		margin-bottom: 70px;
 	}
+	& > a {
+		&:hover,
+	&:focus {
+	 color: $prime-orange-color;
+	}
+	}
 }
 .address {
 	display: block;
@@ -170,6 +181,7 @@
 .footer-icon {
 	margin-right: 16px;
 	vertical-align: middle;
+	--color1: currentColor;
 }
 
 .features-info {
@@ -182,7 +194,7 @@
 .copyright {
 	display: flex;
 	text-align: left;
-	// width: 100%;
+	width: 100%;
 
 	font-weight: 600;
 	font-size: 11px;
@@ -190,42 +202,42 @@
 	letter-spacing: 0.2em;
 
 	@media screen and (min-width: 320px) and (max-width: 767px) {
-		max-width: 320px;
 		padding: 44px 31px;
 		flex-wrap: wrap-reverse;
 	}
 	@media screen and (min-width: 768px) and (max-width: 1199px) {
-		max-width: 768px;
-
 		padding: 56px 39px;
 	}
 	@media screen and (min-width: 1200px) {
-		max-width: 1200px;
-
 		padding: 56px 55px;
 	}
 }
 .social-footer {
 	position: relative;
-	&::before{
-	@extend %before;
-	// justify-content: center;
-	// text-align: center;
-	}
-	text-align: center;
-	vertical-align: middle;
-	justify-content: center;
-	margin-left: auto;
 	display: flex;
-	margin-bottom: 20px;
-
+	margin-left: auto;
+	
 	color: $prime-black-color;
+	@media screen and (min-width: 320px) and (max-width: 767px) {
+		margin-bottom: 20px;
+	}
+	
 }
 .social-footer-item {
 	margin-left: 20px;
 	&:not(:last-child) {
 		margin-right: 20px;
 	}
+	&:hover,
+	&:focus {
+	 color: $prime-orange-color;
+	}
+}
+.social-footer-item.insta {
+	&::before{
+		@extend %before;
+    margin-right: 40px;
+		}
 }
 .copyright-text {
 	margin-right: 200px;
