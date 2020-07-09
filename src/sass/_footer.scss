@@ -45,6 +45,16 @@
 		padding: 130px 40px 130px 55px;
 	}
 }
+
+.footer-form-text {
+	@media screen and (min-width: 1200px) {
+		max-width: 600px;
+		width: 100%;
+		padding-left: 55px;
+		margin-left: auto;
+	}
+}
+
 .footer-contacts {
 	background-size: cover;
 	background-repeat: no-repeat;
