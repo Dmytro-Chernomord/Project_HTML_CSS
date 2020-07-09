@@ -103,6 +103,8 @@ button {
   border: 1px solid #ff6c00;
   border-radius: 25px;
   background-color: transparent;
+  display: inline-block;
+  text-align: center;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
@@ -123,6 +125,8 @@ button {
   border: 1px solid #ff6c00;
   border-radius: 25px;
   background-color: transparent;
+  display: inline-block;
+  text-align: center;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
