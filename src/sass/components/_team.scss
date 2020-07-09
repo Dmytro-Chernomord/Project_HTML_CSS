@@ -1,8 +1,10 @@
 .team {
 	background-color: #f7f7f7;
+	max-width: 1600px;
+	margin: 0 auto;
 }
 
-.subtitle {
+.team-subtitle {
 	padding-bottom: 20px;
 	font-weight: 600;
 	font-size: 11px;
@@ -15,7 +17,7 @@
 		@extend %before;
 	}
 }
-.subtitle::before {
+.team-subtitle::before {
 	content: "";
 	display: inline-block;
 	vertical-align: middle;
@@ -28,6 +30,7 @@
 
 .team-title {
 	padding-bottom: 44px;
+	font-size: 42px;
 }
 
 .team-cards {
@@ -35,11 +38,27 @@
 	justify-content: center;
 	flex-wrap: wrap;
 	margin: -15px;
+	text-align: center;
+
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	@media screen and (min-width: 1200px) {
+		display: flex;
+		flex-wrap: nowrap;
+	}
 }
 
 .flex-card {
 	width: calc(100% / 1);
 	padding: 15px;
+
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		width: calc(100% / 1);
+		padding: 15px;
+	}
 
 	@media screen and (min-width: 1200px) {
 		width: calc(100% / 3);
