@@ -77,13 +77,13 @@
 
 .checkbox {
 	position: relative;
-	color: rgba(157, 164, 189, 0.4);
+	color: $checkbox-color;
 	input {
 		width: 100%;
 		margin-bottom: 44px;
 		padding-bottom: 8px;
 		border: transparent;
-		border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+		border-bottom: 1px solid $checkbox-color);
 		background-color: transparent;
 		&:focus + .checkbox-name {
 			color: transparent;
@@ -118,14 +118,14 @@
 	resize: none;
 	background-color: transparent;
 	border: transparent;
-	border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+	border-bottom: 1px solid $checkbox-color;
 	&:hover,
 	&:focus {
 		border-bottom: 1px solid $prime-white-color;
-		color:#ffffff;
+		color:$prime-white-color;
 	}
 	&::placeholder {
-		color: rgba(157, 164, 189, 0.4);
+		color: $checkbox-color;
 	}
 }
 
@@ -187,7 +187,7 @@
 .features-info {
 	&::before {
 	@extend %before;
-	background-color: rgba(157, 164, 189, 0.4);
+	background-color: $checkbox-color;
 }
 	color: $prime-white-color;
 }
