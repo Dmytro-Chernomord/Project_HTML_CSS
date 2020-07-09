@@ -1,9 +1,11 @@
 .team {
-	background-color: #f7f7f7;
+	background-color: $background-color;
+
+	max-width: 1600px;
+	margin: 0 auto;
 }
 
-.subtitle {
-	padding-bottom: 20px;
+.team-subtitle {
 	font-weight: 600;
 	font-size: 11px;
 	line-height: 1.36;
@@ -15,19 +17,13 @@
 		@extend %before;
 	}
 }
-.subtitle::before {
-	content: "";
-	display: inline-block;
-	vertical-align: middle;
-	margin-bottom: 2px;
-	width: 60px;
-	height: 1px;
-	margin-right: 20px;
-	background-color: rgba(157, 164, 189, 0.6);
-}
 
 .team-title {
 	padding-bottom: 44px;
+
+	font-family: Raleway, sans-serif;
+	font-size: 42px;
+	line-height: 1.17;
 }
 
 .team-cards {
@@ -35,11 +31,27 @@
 	justify-content: center;
 	flex-wrap: wrap;
 	margin: -15px;
+	text-align: center;
+
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	@media screen and (min-width: 1200px) {
+		display: flex;
+		flex-wrap: nowrap;
+	}
 }
 
 .flex-card {
 	width: calc(100% / 1);
 	padding: 15px;
+
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		width: calc(100% / 1);
+		padding: 15px;
+	}
 
 	@media screen and (min-width: 1200px) {
 		width: calc(100% / 3);
