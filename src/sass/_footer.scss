@@ -166,21 +166,36 @@
 	}
 }
 .address {
+	position: relative;
+	padding-left: 40px;
 	display: block;
+	font-weight: 400;
 	font-family: Open Sans;
 	font-size: 18px;
 	line-height: 1.67;
+
+	@media screen and (min-width: 768px) {
+		max-width: 270px;
+	}
 
 	&:not(:last-child) {
 		margin-bottom: 20px;
 	}
 }
+
+.address-element {
+	@media screen and (min-width: 768px) {
+		display: none;
+	}
+}
+
 .address.mail {
 	text-decoration: underline;
 }
 .footer-icon {
-	margin-right: 16px;
-	vertical-align: middle;
+	position: absolute;
+	top: 5px;
+	left: 0;
 	--color1: currentColor;
 }
 
