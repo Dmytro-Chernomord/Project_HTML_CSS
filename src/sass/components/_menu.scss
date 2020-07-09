@@ -1,149 +1,131 @@
 .menu-button {
-  display: inline-block;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: auto;
-  margin-right: 15px;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  z-index: 2;
+	display: inline-block;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: 15px;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	z-index: 2;
 
-  @media screen and (min-width: 481px) {
-    display: none;
-  }
+	@media screen and (min-width: 481px) {
+		display: none;
+	}
 
-  & .icon-burger {
-    fill: $prime-white-color;
-    display: block;
-  }
+	& .icon-burger {
+		fill: $prime-white-color;
+		display: block;
+	}
 
-  & .icon-cross {
-    fill: $prime-black-color;
-    display: none;
-  }
+	& .icon-cross {
+		fill: $prime-black-color;
+		display: none;
+	}
 
-  &.is-open .icon-cross {
-    display: block;
-  }
-  &.is-open .icon-burger {
-    display: none;
-  }
+	&.is-open .icon-cross {
+		display: block;
+	}
+	&.is-open .icon-burger {
+		display: none;
+	}
 }
 
 .menu {
-  display: flex;
-  background-color: $prime-white-color;
-  padding-left: 40px;
-  padding-top: 118px;
-  width: 337px;
-  height: 796px;
-  box-shadow: -1px 0px 3px rgba(0, 0, 0, 0.16), -2px 0px 4px rgba(0, 0, 0, 0.08),
-    -4px 0px 8px rgba(0, 0, 0, 0.04);
+	display: flex;
+	background-color: $prime-white-color;
+	padding-left: 40px;
+	padding-top: 118px;
+	width: 337px;
+	height: 796px;
+	box-shadow: -1px 0px 3px rgba(0, 0, 0, 0.16), -2px 0px 4px rgba(0, 0, 0, 0.08), -4px 0px 8px rgba(0, 0, 0, 0.04);
 
-  &.is-open {
-    display: block;
-  }
+	&.is-open {
+		display: block;
+	}
 
-  @media screen and (max-width: 767px) {
-    display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
+	@media screen and (max-width: 767px) {
+		display: none;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
 
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.39;
-  letter-spacing: 0.1em;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 1.39;
+	letter-spacing: 0.1em;
 }
 
 .backdrop {
-  pointer-events: none;
-  bottom: 0;
-  width: 100%;
-  background-color: rgba(49, 48, 46, 0.5);
-  height: 100%;
-  opacity: 0;
-  position: fixed;
-  left: 0;
+	pointer-events: none;
+	bottom: 0;
+	width: 100%;
+	background-color: rgba(49, 48, 46, 0.5);
+	height: 100%;
+	opacity: 0;
+	position: fixed;
+	left: 0;
 }
 
 .is-open + .backdrop {
-  opacity: 1;
+	opacity: 1;
 }
 .nav {
-  &-list {
-    margin-bottom: 64px;
-  }
-  &-item {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 1.38;
-    letter-spacing: 0.1em;
-    color: $prime-black-color;
-    &:not(:last-child) {
-      margin-bottom: 24px;
-    }
-  }
+	&-list {
+		margin-bottom: 64px;
+	}
+	&-item {
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 1.38;
+		letter-spacing: 0.1em;
+		color: $prime-black-color;
+		&:not(:last-child) {
+			margin-bottom: 24px;
+		}
+	}
 }
-// Удалить класс так как есть в стандартных. Но ОСТАВИТЬ ВЫСОТУ
-.button-light {
-  width: 194px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  border: 1px solid $prime-orange-color;
-  border-radius: 25px;
-  background-color: transparent;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: $prime-black-color;
-  cursor: pointer;
-  &:hover,
-  &:focus {
-    color: $prime-white-color;
-    background-color: $prime-orange-color;
-  }
+
+.button-light.is-menu {
+	width: 194px;
 }
 .contact {
-  margin-bottom: 64px;
-  &-item {
-    &:not(:last-child) {
-      margin-bottom: 24px;
-    }
-    &-link {
-      font-size: 18px;
-      font-weight: 600;
-      line-height: 1.38;
-      letter-spacing: 0.1em;
-      color: $prime-black-color;
-    }
-  }
+	margin-bottom: 64px;
+	&-item {
+		&:not(:last-child) {
+			margin-bottom: 24px;
+		}
+		&-link {
+			font-size: 18px;
+			font-weight: 600;
+			line-height: 1.38;
+			letter-spacing: 0.1em;
+			color: $prime-black-color;
+		}
+	}
 }
 .social {
-  &-list {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.35;
-    letter-spacing: 0.2em;
-    color: $prime-black-color;
-  }
-  &-item {
-    &:not(:last-child) {
-      margin-bottom: 24px;
-    }
-  }
+	&-list {
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 1.35;
+		letter-spacing: 0.2em;
+		color: $prime-black-color;
+	}
+	&-item {
+		&:not(:last-child) {
+			margin-bottom: 24px;
+		}
+	}
 }
 .instagram-header {
-  &:before {
-    @extend %before;
-  }
+	&:before {
+		@extend %before;
+	}
 }
 .youtube-header {
-  margin-left: 80px;
+	margin-left: 80px;
 }
 // .backdrop.is-open {
 //   position: fixed;
