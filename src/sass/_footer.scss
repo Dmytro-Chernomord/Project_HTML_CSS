@@ -90,14 +90,18 @@
 		padding-bottom: 8px;
 		border: transparent;
 
-		color: $checkbox-color;
-		border-bottom: 1px solid currentColor;
+		color: $prime-white-color;
+
+		border-bottom: 1px solid $checkbox-color;
 
 		background-color: transparent;
 
 		transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 		&:focus + .checkbox-name {
+			color: transparent;
+		}
+		&:not(:placeholder-shown) + .checkbox-name {
 			color: transparent;
 		}
 	}
@@ -111,7 +115,7 @@
 	&:hover {
 		color: $prime-white-color;
 		input {
-			color: $prime-white-color;
+			border-bottom: 1px solid $prime-white-color;
 		}
 	}
 }
@@ -137,14 +141,14 @@
 	background-color: transparent;
 	border: transparent;
 
-	border-bottom: 1px solid currentColor;
-	color: $checkbox-color;
+	border-bottom: 1px solid $checkbox-color;
+	color: $prime-white-color;
 
 	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 	&:hover,
 	&:focus {
-		color: $prime-white-color;
+		border-bottom: 1px solid $prime-white-color;
 	}
 	&::placeholder {
 		color: $checkbox-color;
