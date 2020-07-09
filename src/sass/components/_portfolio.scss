@@ -1,7 +1,13 @@
-.section-title.portfolio-title {
-  display: none;
-  + p {
-    margin-bottom: 44px;
+.features-info.potfolio-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.37;
+
+  letter-spacing: 0.1em;
+  margin-bottom: 44px;
+  color: $prime-black-color;
+  &::before {
+  background: $prime-black-color;
   }
 }
 .portfolio {
