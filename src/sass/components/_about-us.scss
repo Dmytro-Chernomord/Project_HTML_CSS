@@ -1,4 +1,6 @@
-.section-img {
+
+.aboutus-img {
+
 	display: none;
 
 	@media screen and (min-width: 769px) {
@@ -47,12 +49,16 @@
 	}
 }
 
-.section-img-photo {
+
+.aboutus-img-photo {
+
 	width: 100%;
 	height: 100%;
 }
 
-.section-name {
+
+.aboutus-name {
+
 	font-weight: 600;
 	font-size: 11px;
 	line-height: 1.36;
@@ -61,17 +67,23 @@
 	color: $prime-black-color;
 }
 
-.section-title {
-	font-family: Raleway, sans-serif;
+
+
+
+.aboutus-title {
+
 	font-weight: 700;
 	font-size: 28px;
 	line-height: 1.18;
 	letter-spacing: 0.05em;
 	color: $prime-black-color;
 	max-width: 330px;
+  	font-family: Raleway, sans-serif;
 }
 
-.section-text {
+
+.aboutus-text {
+
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.62;
