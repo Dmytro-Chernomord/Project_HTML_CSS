@@ -1,13 +1,14 @@
 .features-info.potfolio-title {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.37;
-
-  letter-spacing: 0.1em;
-  margin-bottom: 44px;
+  position: relative;
+ 
   color: $prime-black-color;
   &::before {
+    position: absolute;
+    top: 8px;
   background: $prime-black-color;
+  }
+  > p {
+    padding-left: 80px;
   }
 }
 .portfolio {

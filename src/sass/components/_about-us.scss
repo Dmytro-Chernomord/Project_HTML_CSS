@@ -59,7 +59,13 @@
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
 	color: $prime-black-color;
+
 	margin-bottom: 20px;
+	&::before {
+		@extend %before;
+		}
+}
+
 
 	&:before {
 		@extend %before;
@@ -73,8 +79,10 @@
 	letter-spacing: 0.05em;
 	color: $prime-black-color;
 	max-width: 330px;
+
 	font-family: Raleway, sans-serif;
 	margin-bottom: 20px;
+
 
 	@media screen and (min-width: 1200px) {
 		font-size: 42px;
