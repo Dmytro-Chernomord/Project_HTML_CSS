@@ -56,7 +56,7 @@
 }
 
 .section-name.is-header {
-	color: rgba(157, 164, 189, 0.6);
+	color: $header-color;
 }
 
 .section-name:before {
@@ -67,7 +67,7 @@
 	margin-bottom: 2px;
 	width: 60px;
 	height: 1px;
-	background-color: rgba(157, 164, 189, 0.6);
+	background-color: $header-color;
 }
 
 .section-title.is-main {
