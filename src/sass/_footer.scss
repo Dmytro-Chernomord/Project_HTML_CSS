@@ -3,7 +3,7 @@
 	text-align: center;
 	color: $light-grey-color;
 	margin-left: auto;
-    margin-right: auto;
+	margin-right: auto;
 }
 .form-contacts {
 	background-color: $footer-background;
@@ -28,9 +28,9 @@
 	color: $prime-white-color;
 	margin-bottom: 40px;
 	font-weight: 700;
-    font-size: 28px;
-    line-height: 1.18;
-    letter-spacing: 0.05em;
+	font-size: 28px;
+	line-height: 1.18;
+	letter-spacing: 0.05em;
 }
 
 .footer-form,
@@ -122,7 +122,7 @@
 	&:hover,
 	&:focus {
 		border-bottom: 1px solid $prime-white-color;
-		color:#ffffff;
+		color: #ffffff;
 	}
 	&::placeholder {
 		color: rgba(157, 164, 189, 0.4);
@@ -160,9 +160,9 @@
 	}
 	& > a {
 		&:hover,
-	&:focus {
-	 color: $prime-orange-color;
-	}
+		&:focus {
+			color: $prime-orange-color;
+		}
 	}
 }
 .address {
@@ -186,9 +186,9 @@
 
 .features-info {
 	&::before {
-	@extend %before;
-	background-color: rgba(157, 164, 189, 0.4);
-}
+		@extend %before;
+		background-color: rgba(157, 164, 189, 0.4);
+	}
 	color: $prime-white-color;
 }
 .copyright {
@@ -213,34 +213,35 @@
 	}
 }
 .social-footer {
-	position: relative;
 	display: flex;
 	margin-left: auto;
-	
+
 	color: $prime-black-color;
 	@media screen and (min-width: 320px) and (max-width: 767px) {
 		margin-bottom: 20px;
 	}
-	
 }
-.social-footer-item {
+
+// поменял social-footer-item на social-footer-link
+.social-footer-link {
 	margin-left: 20px;
-	&:not(:last-child) {
-		margin-right: 20px;
-	}
+
 	&:hover,
 	&:focus {
-	 color: $prime-orange-color;
+		color: $prime-orange-color;
 	}
 }
 .social-footer-item.insta {
-	&::before{
+	&::before {
 		@extend %before;
-    margin-right: 40px;
-		}
+	}
 }
 .copyright-text {
-	margin-right: 200px;
+	margin-right: 50%;
+
+	@media screen and (min-width: 767px) {
+		margin-right: auto;
+	}
 }
 .copyright-icon {
 	display: inline-flex;
