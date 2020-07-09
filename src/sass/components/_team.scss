@@ -4,7 +4,7 @@
 	margin: 0 auto;
 }
 
-.subtitle {
+.team-subtitle {
 	padding-bottom: 20px;
 	font-weight: 600;
 	font-size: 11px;
@@ -17,7 +17,7 @@
 		@extend %before;
 	}
 }
-.subtitle::before {
+.team-subtitle::before {
 	content: "";
 	display: inline-block;
 	vertical-align: middle;
