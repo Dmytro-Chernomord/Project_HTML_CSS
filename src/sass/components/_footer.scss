@@ -252,13 +252,15 @@
 	color: currentColor;
 }
 
-.features-info.worktime-text {
+.worktime-text {
+	position: relative;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+	color: $prime-white-color;
 	&::before {
 		@extend %before;
 		background-color: $checkbox-color;
 	}
-
-	color: $prime-white-color;
 }
 .copyright {
 	display: flex;

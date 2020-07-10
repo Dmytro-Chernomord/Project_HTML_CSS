@@ -25,6 +25,7 @@
 }
 
 .price-subtitle {
+	position: relative;
 	margin-bottom: 20px;
 
 	font-weight: 600;
@@ -32,18 +33,17 @@
 	line-height: 1.36;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
-	color: rgba(157, 164, 189, 0.6);
-
-	&:before {
-		content: "";
-		display: inline-block;
-		vertical-align: middle;
-		margin-bottom: 2px;
-		width: 60px;
-		height: 1px;
-		margin-right: 20px;
-		background-color: rgba(157, 164, 189, 0.6);
+	color: $header-color;
+	&::before {
+		@extend %before;
+		position: absolute;
+		top: 7px;
+		background-color: $header-color;
 	}
+	
+	> p {
+		padding-left: 80px;
+	  }
 }
 
 .price-title {
@@ -102,6 +102,7 @@
 		order: 2;
 		margin: 0 6px 6px 6px;
 	}
+	
 }
 
 .price-list-value {

@@ -35,6 +35,8 @@ button {
 	color: inherit;
 	background-color: transparent;
 }
+
+:hover,
 :focus {
-	outline-color: $prime-orange-color;
+    outline: none;
 }
