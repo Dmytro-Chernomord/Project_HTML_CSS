@@ -210,6 +210,7 @@ textarea {
 		}
 	}
 }
+
 .address-block {
 	padding: 0;
 	display: inline-block;
@@ -233,6 +234,7 @@ textarea {
 		}
 	}
 }
+
 .address {
 	position: relative;
 	padding-left: 40px;
@@ -272,7 +274,7 @@ textarea {
 	position: absolute;
 	top: 5px;
 	left: 0;
-	color: currentColor;
+	--color1: currentColor;
 }
 
 .worktime-text {
