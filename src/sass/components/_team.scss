@@ -12,6 +12,7 @@
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
 	margin-bottom: 20px;
+	color: $prime-black-color;
 
 	&:before {
 		@extend %before;
@@ -31,6 +32,7 @@
 .team-title {
 	padding-bottom: 44px;
 	font-size: 42px;
+	color: $prime-black-color;
 }
 
 .team-cards {
