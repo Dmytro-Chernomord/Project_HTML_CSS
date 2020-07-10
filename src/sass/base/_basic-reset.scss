@@ -36,5 +36,6 @@ button {
 	background-color: transparent;
 }
 :focus {
+	outline: none;
 	outline-color: $prime-orange-color;
 }
