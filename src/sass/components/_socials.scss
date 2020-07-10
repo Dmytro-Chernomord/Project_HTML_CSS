@@ -1,34 +1,40 @@
 .socials-flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .social-item {
+
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: $prime-white-color;
+
 }
 
 .social-item:not(:last-child) {
-  margin-right: 10px;
+	margin-right: 10px;
 }
 
 .social-link {
-  display: flex;
-  text-decoration: none;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  background-color: transparent;
-  border-radius: 50%;
+	display: flex;
+	text-decoration: none;
+	align-items: center;
+	justify-content: center;
+	width: 44px;
+	height: 44px;
+	background-color: transparent;
+	border-radius: 50%;
+
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link:hover,
 .social-link:focus {
-  background-color: #ffffff;
-  fill: #ff6c00;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  background-color: $prime-white-color;
+  fill: $prime-orange-color;
+ 
+
 }

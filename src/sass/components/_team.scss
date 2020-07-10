@@ -1,11 +1,12 @@
 .team {
-	background-color: #f7f7f7;
-	max-width: 1600px;
+	background-color: $background-color;
+
 	margin: 0 auto;
 }
 
 .team-subtitle {
-	padding-bottom: 20px;
+	position: relative;
+
 	font-weight: 600;
 	font-size: 11px;
 	line-height: 1.36;
@@ -14,25 +15,27 @@
 	margin-bottom: 20px;
 	color: $prime-black-color;
 
-	&:before {
+	&::before {
 		@extend %before;
+		position: absolute;
+		top: 7px;
 	}
-}
-.team-subtitle::before {
-	content: "";
-	display: inline-block;
-	vertical-align: middle;
-	margin-bottom: 2px;
-	width: 60px;
-	height: 1px;
-	margin-right: 20px;
-	background-color: rgba(157, 164, 189, 0.6);
+	
+	> p {
+		padding-left: 80px;
+	  }
 }
 
 .team-title {
-	padding-bottom: 44px;
+	margin-bottom: 44px;
+
+	font-family: Raleway, sans-serif;
 	font-size: 42px;
+
 	color: $prime-black-color;
+
+	line-height: 1.17;
+
 }
 
 .team-cards {
