@@ -5,6 +5,9 @@
 		padding-left: 115px;
 		padding-right: 85px;
 	}
+	&-block {
+		margin-bottom: 79px;
+	}
 	&-info {
 		position: relative;
 		font-weight: 600;
@@ -13,6 +16,9 @@
 		letter-spacing: 0.1em;
 		text-transform: uppercase;
 		margin-bottom: 20px;
+		& > p {
+			color: $prime-black-color;
+		}
 		@media screen and (max-width: 767px) {
 		}
 		&::before {
@@ -20,10 +26,10 @@
 			position: absolute;
 			top: 7px;
 		}
-		
+
 		> p {
 			padding-left: 80px;
-		  }
+		}
 	}
 	&-title {
 		font-family: Raleway, sans-serif;
@@ -32,6 +38,7 @@
 		line-height: 1.17;
 		letter-spacing: 0.05em;
 		margin-bottom: 20px;
+		color: $prime-black-color;
 		@media screen and (min-width: 768px) and (max-width: 1199px) {
 			padding-right: 269px;
 		}
@@ -42,7 +49,6 @@
 		line-height: 1.67;
 		letter-spacing: 0.02em;
 		color: $primary-text-color;
-		margin-bottom: 79px;
 		@media screen and (min-width: 768px) and (max-width: 1199px) {
 			padding-right: 189px;
 		}
