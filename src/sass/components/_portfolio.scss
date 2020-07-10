@@ -2,15 +2,16 @@
   position: relative;
  margin-bottom: 44px;
   color: $prime-black-color;
-  &::before {
-    position: absolute;
-    top: 8px;
-  background: $prime-black-color;
+  &:before {
+		position: absolute;
+    top: 7px;
+    margin-top: 0;
+	}
+	> p {
+		padding-left: 80px;
+    }
   }
-  > p {
-    padding-left: 80px;
-  }
-}
+
 .portfolio {
   text-align: center;
   @media screen and (min-width: 768px) and (max-width: 1199px) {

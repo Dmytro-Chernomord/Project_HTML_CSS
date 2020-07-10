@@ -15,11 +15,15 @@
 		margin-bottom: 20px;
 		@media screen and (max-width: 767px) {
 		}
-
-		position: relative;
-		&:before {
+		&::before {
 			@extend %before;
+			position: absolute;
+			top: 7px;
 		}
+		
+		> p {
+			padding-left: 80px;
+		  }
 	}
 	&-title {
 		font-family: Raleway, sans-serif;
