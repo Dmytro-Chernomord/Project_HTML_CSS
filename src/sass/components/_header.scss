@@ -5,6 +5,9 @@
 }
 
 .side-bar {
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
 	@media screen and (min-width: 768px) {
 		width: 159px;
 		height: 680px;
@@ -121,22 +124,21 @@
 	text-transform: uppercase;
 	color: rgba(157, 164, 189, 0.6);
 	padding-left: 80px;
-
 }
 
-.header-name-cont{
+.header-name-cont {
 	position: relative;
-&:before {
-	position: absolute;
-	content: "";
-	display: inline-block;
-	vertical-align: middle;
-	margin-right: 20px;
-	width: 60px;
-	height: 1px;
-	background-color: $header-color;
-	top: 6px;
-}
+	&:before {
+		position: absolute;
+		content: "";
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 20px;
+		width: 60px;
+		height: 1px;
+		background-color: $header-color;
+		top: 6px;
+	}
 }
 .header-title.is-main {
 	font-size: 48px;

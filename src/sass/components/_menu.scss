@@ -1,14 +1,19 @@
 .menu-button {
-	display: inline-block;
-	margin-top: 0;
-	margin-bottom: 0;
 	margin-left: auto;
-	margin-right: 15px;
 	padding: 0;
 	border: none;
-	background-color: transparent;
 	z-index: 2;
-
+	position: absolute;
+	right: 31px;
+	top: 48px;
+	&-cross {
+		position: fixed;
+		top: 48px;
+		right: 31px;
+		@media screen and (min-width: 768px) {
+			display: none;
+		}
+	}
 	@media screen and (min-width: 768px) {
 		display: none;
 	}
@@ -85,6 +90,7 @@
 .is-open + .backdrop {
 	opacity: 1;
 	pointer-events: all;
+	z-index: 30;
 }
 .nav {
 	&-list {
@@ -241,7 +247,7 @@
 }
 .slider {
 	position: absolute;
-	right: 39px;
+	right: 55px;
 	top: 325px;
 	@media screen and (max-width: 767px) {
 		display: none;

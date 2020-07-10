@@ -1,5 +1,11 @@
 <div class="main-nav">
-	<div class="side-bar"></div>
+	<div class="side-bar">
+		<a href="./index.html" class="logo">
+			<svg width="69" height="55">
+				<use href="./images/project-icons.svg#icon-logo"></use>
+			</svg>
+		</a>
+	</div>
 	<header class="header">
 		<div class="header-top">
 			<a href="./index.html" class="logo">
@@ -9,12 +15,17 @@
 			</a>
 			<button class="menu-button" data-menu-button>
 				<svg width="40" height="40">
-					<use class="icon-cross" href="./images/project-icons.svg#icon-menu-close"></use>
 					<use class="icon-burger" href="./images/project-icons.svg#icon-menu-open"></use>
 				</svg>
 			</button>
 			<div class="backdrop">
 				<div class="menu" data-menu>
+					<button class="menu-button-cross" data-menu-close>
+						<svg width="40" height="40">
+							<use class="icon-cross" href="./images/project-icons.svg#icon-menu-close"></use>
+						</svg>
+					</button>
+
 					<nav class="nav">
 						<ul class="nav-list">
 							<li class="nav-item">
