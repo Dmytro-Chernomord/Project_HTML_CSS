@@ -34,11 +34,10 @@ button {
 	font: inherit;
 	color: inherit;
 	background-color: transparent;
+	cursor: pointer;
 }
 
 :hover,
 :focus {
-
-    outline: none;
+	outline: none;
 }
-
