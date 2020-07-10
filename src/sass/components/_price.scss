@@ -40,10 +40,10 @@
 		top: 7px;
 		background-color: $header-color;
 	}
-	
+
 	> p {
 		padding-left: 80px;
-	  }
+	}
 }
 
 .price-title {
@@ -60,6 +60,10 @@
 	padding: 30px;
 	margin-bottom: 50px;
 	background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+
+	@media screen and (max-width: 410px) {
+		padding: 20px;
+	}
 	@media screen and (min-width: 768px) {
 		padding: 30px 40px;
 	}
@@ -92,6 +96,10 @@
 	letter-spacing: 0.02em;
 	color: $light-grey-color;
 
+	@media screen and (max-width: 410px) {
+		font-size: 10px;
+	}
+
 	@media screen and (min-width: 768px) {
 		font-size: 18px;
 	}
@@ -102,7 +110,6 @@
 		order: 2;
 		margin: 0 6px 6px 6px;
 	}
-	
 }
 
 .price-list-value {
