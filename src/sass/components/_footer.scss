@@ -15,6 +15,8 @@
 	}
 	@media screen and (min-width: 1200px) {
 		display: flex;
+		justify-content: space-between;
+		min-width: 1200px;
 	}
 	h2 {
 		font-size: 42px;
@@ -41,17 +43,16 @@
 		padding: 100px 39px;
 	}
 	@media screen and (min-width: 1200px) {
-		width: 100%;
-		padding: 130px 40px 130px 55px;
+		width: calc((100% - 30px) / 2);
+		padding: 130px 40px 130px 15px;
 	}
 }
 
 .footer-form-text {
 	@media screen and (min-width: 1200px) {
-		max-width: 600px;
-		width: 100%;
-		padding-left: 55px;
+		max-width: 560px;
 		margin-left: auto;
+		margin-right: -30px;
 	}
 }
 
@@ -95,8 +96,13 @@
 	input {
 		width: 100%;
 		margin-bottom: 44px;
-		padding-bottom: 8px;
 		border: transparent;
+
+		font-family: "Roboto", sans-serif;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 1.36;
+		letter-spacing: 0.1em;
 
 		color: $prime-white-color;
 
@@ -107,10 +113,12 @@
 		transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 		&:focus + .checkbox-name {
-			color: transparent;
+			color: $prime-white-color;
+			top: -15px;
 		}
 		&:not(:placeholder-shown) + .checkbox-name {
-			color: transparent;
+			color: $prime-white-color;
+			top: -15px;
 		}
 	}
 	@media screen and (min-width: 768px) {
@@ -141,38 +149,53 @@
 
 .message {
 	width: 100%;
-	display: block;
-	padding-bottom: 60px;
 	margin-bottom: 44px;
-	width: 100%;
-	resize: none;
-	background-color: transparent;
 	border: transparent;
 
-	border-bottom: 1px solid $checkbox-color;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.36;
+	letter-spacing: 0.1em;
+
 	color: $prime-white-color;
+
+	border-bottom: 1px solid $checkbox-color;
+
+	background-color: transparent;
 
 	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-	&:hover,
-	&:focus {
+	&:focus + .checkbox-name {
+		color: $prime-white-color;
+		top: -15px;
+	}
+	&:not(:placeholder-shown) + .checkbox-name {
+		color: $prime-white-color;
+		top: -15px;
+	}
+}
+
+textarea {
+	resize: none;
+}
+
+.checkbox.textarea {
+	width: 100%;
+
+	&:hover .message {
 		border-bottom: 1px solid $prime-white-color;
 	}
-	&::placeholder {
-		color: $checkbox-color;
-	}
-	&:placeholder-shown {
-		text-transform: uppercase;
-		font-weight: 600;
-		font-size: 11px;
-		line-height: 1.36;
-		letter-spacing: 0.1em;
-	}
+}
+
+.checkbox:focus .checkbox-name {
+	top: 10;
 }
 
 .footer form {
 	padding: 0;
 }
+
 .contacts-div {
 	@media screen and (min-width: 320px) and (max-width: 767px) {
 		text-align: left;
@@ -280,7 +303,7 @@
 		padding: 56px 39px;
 	}
 	@media screen and (min-width: 1200px) {
-		padding: 56px 55px;
+		padding: 56px 15px;
 	}
 }
 .social-footer {
@@ -301,13 +324,17 @@
 		color: $prime-orange-color;
 	}
 }
+
 .social-footer-item.insta {
 	&::before {
 		@extend %before;
+		@media screen and (max-width: 322px) {
+			margin-right: 18px;
+		}
 	}
 }
 .copyright-text {
-	margin-right: 50%;
+	margin-right: 45%;
 
 	@media screen and (min-width: 768px) {
 		margin-right: auto;
