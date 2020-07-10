@@ -217,6 +217,7 @@ button {
 @media screen and (max-width: 767px) {
   .menu.is-open {
     transform: translateX(0);
+    overflow-y: scroll;
   }
 }
 @media screen and (max-width: 767px) {
@@ -854,6 +855,11 @@ button {
   margin-bottom: 50px;
   background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
+@media screen and (max-width: 410px) {
+  .price-list {
+    padding: 20px;
+  }
+}
 @media screen and (min-width: 768px) {
   .price-list {
     padding: 30px 40px;
@@ -890,6 +896,14 @@ button {
   line-height: 2.14;
   letter-spacing: 0.02em;
   color: #9da4bd;
+}
+.price-list-item:last-child {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 410px) {
+  .price-list-item {
+    font-size: 10px;
+  }
 }
 @media screen and (min-width: 768px) {
   .price-list-item {
