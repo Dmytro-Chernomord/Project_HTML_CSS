@@ -1,4 +1,5 @@
 .features-info.potfolio-title {
+
   position: relative;
  margin-bottom: 44px;
   color: $prime-black-color;
@@ -12,18 +13,20 @@
     }
   }
 
+
 .portfolio {
-  text-align: center;
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    flex-wrap: nowrap;
-  }
+	text-align: center;
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	@media screen and (min-width: 1200px) {
+		display: flex;
+		flex-wrap: nowrap;
+	}
 }
 .portfolio-card {
+
   width: 100%;
   margin-bottom: 30px;
   transform: scale(1);
@@ -58,4 +61,5 @@
     }
   }
  
+
 }
