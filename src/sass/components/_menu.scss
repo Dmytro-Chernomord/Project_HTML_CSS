@@ -57,6 +57,7 @@
 		display: block;
 		@media screen and (max-width: 767px) {
 			transform: translateX(0);
+			overflow-y: scroll;
 		}
 	}
 
