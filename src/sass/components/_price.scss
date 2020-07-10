@@ -96,6 +96,9 @@
 	letter-spacing: 0.02em;
 	color: $light-grey-color;
 
+	&:last-child {
+		margin-bottom: 0;
+	}
 	@media screen and (max-width: 410px) {
 		font-size: 10px;
 	}
