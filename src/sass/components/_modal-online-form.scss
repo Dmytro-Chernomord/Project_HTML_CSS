@@ -99,10 +99,12 @@
 		transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 		&:focus + .checkbox-name {
-			color: transparent;
+			color: $prime-white-color;
+			top: -15px;
 		}
 		&:not(:placeholder-shown) + .checkbox-name {
-			color: transparent;
+			color: $prime-white-color;
+			top: -15px;
 		}
 	}
 
@@ -112,4 +114,14 @@
 			border-bottom: 1px solid $prime-white-color;
 		}
 	}
+}
+.online-checkbox.textarea {
+	width: 100%;
+
+	&:hover .message {
+		border-bottom: 1px solid $prime-white-color;
+	}
+}
+.online-checkbox:focus .checkbox-name {
+	top: 10;
 }
