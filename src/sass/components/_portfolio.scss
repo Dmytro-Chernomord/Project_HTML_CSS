@@ -1,47 +1,47 @@
 .features-info.potfolio-title {
-  position: relative;
- margin-bottom: 44px;
-  color: $prime-black-color;
-  &::before {
-    position: absolute;
-    top: 8px;
-  background: $prime-black-color;
-  }
-  > p {
-    padding-left: 80px;
-  }
+	position: relative;
+	margin-bottom: 44px;
+	color: $prime-black-color;
+	&::before {
+		position: absolute;
+		top: 8px;
+		background: $prime-black-color;
+	}
+	> p {
+		padding-left: 80px;
+	}
 }
 .portfolio {
-  text-align: center;
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    flex-wrap: nowrap;
-  }
+	text-align: center;
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	@media screen and (min-width: 1200px) {
+		display: flex;
+		flex-wrap: nowrap;
+	}
 }
 .portfolio-card {
-  width: 100%;
-  margin-bottom: 30px;
-  &:last-child {
-    margin-bottom: 0;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: calc((100% - 30px) / 2);
-    margin-right: 30px;
-    &:nth-child(2n) {
-      margin-right: 0;
-    }
-    &:nth-last-child(-n + 2) {
-      margin-bottom: 0;
-    }
-  }
-  @media screen and (min-width: 1200px) {
-    width: calc((100% - 30px) / 2);
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
-  }
+	width: 100%;
+	margin-bottom: 30px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		width: calc((100% - 30px) / 2);
+		margin-right: 30px;
+		&:nth-child(2n) {
+			margin-right: 0;
+		}
+		&:nth-last-child(-n + 2) {
+			margin-bottom: 0;
+		}
+	}
+	@media screen and (min-width: 1200px) {
+		width: calc((100% - 30px) / 2);
+		&:not(:last-child) {
+			margin-right: 30px;
+		}
+	}
 }
