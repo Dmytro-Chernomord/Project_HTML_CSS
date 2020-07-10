@@ -38,7 +38,7 @@
 	}
 }
 
-.text {
+.text-container {
 	@media screen and (min-width: 769px) {
 		margin-left: 30px;
 	}
@@ -53,6 +53,7 @@
 }
 
 .aboutus-name {
+	position: relative;
 	font-weight: 600;
 	font-size: 11px;
 	line-height: 1.36;
@@ -62,9 +63,15 @@
 
 	margin-bottom: 20px;
 
-	&:before {
+	&::before {
 		@extend %before;
+		position: absolute;
+		top: 50%;
 	}
+	
+	> p {
+		padding-left: 80px;
+	  }
 }
 
 .aboutus-title {
@@ -92,7 +99,7 @@
 	letter-spacing: 0.02em;
 	color: $primary-text-color;
 	margin-bottom: 20px;
-
+	
 	@media screen and (min-width: 1200px) {
 		font-size: 18px;
 		line-height: 1.67;
@@ -113,4 +120,5 @@
 			padding-right: 20px;
 		}
 	}
+	
 }

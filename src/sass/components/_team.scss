@@ -5,6 +5,8 @@
 }
 
 .team-subtitle {
+	position: relative;
+
 	font-weight: 600;
 	font-size: 11px;
 	line-height: 1.36;
@@ -12,9 +14,15 @@
 	text-transform: uppercase;
 	margin-bottom: 20px;
 
-	&:before {
+	&::before {
 		@extend %before;
+		position: absolute;
+		top: 7px;
 	}
+	
+	> p {
+		padding-left: 80px;
+	  }
 }
 
 .team-title {
