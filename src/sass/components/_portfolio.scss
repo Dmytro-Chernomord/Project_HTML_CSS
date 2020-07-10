@@ -26,6 +26,8 @@
 .portfolio-card {
   width: 100%;
   margin-bottom: 30px;
+  transform: scale(1);
+  transition: transform 1000ms cubic-bezier(0.23, 1, 0.320, 1);
   &:last-child {
     margin-bottom: 0;
   }
@@ -38,11 +40,22 @@
     &:nth-last-child(-n + 2) {
       margin-bottom: 0;
     }
+    &:hover,
+    &:focus {
+      z-index: 2;
+      transform: scale(1.25);
+    }
   }
   @media screen and (min-width: 1200px) {
     width: calc((100% - 30px) / 2);
     &:not(:last-child) {
       margin-right: 30px;
     }
+    &:hover,
+    &:focus {
+      z-index: 2;
+      transform: scale(1.25);
+    }
   }
+ 
 }
