@@ -96,8 +96,13 @@
 	input {
 		width: 100%;
 		margin-bottom: 44px;
-		padding-bottom: 8px;
 		border: transparent;
+
+		font-family: "Roboto", sans-serif;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 1.36;
+		letter-spacing: 0.1em;
 
 		color: $prime-white-color;
 
@@ -108,10 +113,12 @@
 		transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 		&:focus + .checkbox-name {
-			color: transparent;
+			color: $prime-white-color;
+			top: -15px;
 		}
 		&:not(:placeholder-shown) + .checkbox-name {
-			color: transparent;
+			color: $prime-white-color;
+			top: -15px;
 		}
 	}
 	@media screen and (min-width: 768px) {
@@ -142,33 +149,47 @@
 
 .message {
 	width: 100%;
-	display: block;
-	padding-bottom: 60px;
 	margin-bottom: 44px;
-	width: 100%;
-	resize: none;
-	background-color: transparent;
 	border: transparent;
 
-	border-bottom: 1px solid $checkbox-color;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.36;
+	letter-spacing: 0.1em;
+
 	color: $prime-white-color;
+
+	border-bottom: 1px solid $checkbox-color;
+
+	background-color: transparent;
 
 	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-	&:hover,
-	&:focus {
+	&:focus + .checkbox-name {
+		color: $prime-white-color;
+		top: -15px;
+	}
+	&:not(:placeholder-shown) + .checkbox-name {
+		color: $prime-white-color;
+		top: -15px;
+	}
+}
+
+textarea {
+	resize: none;
+}
+
+.checkbox.textarea {
+	width: 100%;
+
+	&:hover .message {
 		border-bottom: 1px solid $prime-white-color;
 	}
-	&::placeholder {
-		color: $checkbox-color;
-	}
-	&:placeholder-shown {
-		text-transform: uppercase;
-		font-weight: 600;
-		font-size: 11px;
-		line-height: 1.36;
-		letter-spacing: 0.1em;
-	}
+}
+
+.checkbox:focus .checkbox-name {
+	top: 10;
 }
 
 .footer form {
