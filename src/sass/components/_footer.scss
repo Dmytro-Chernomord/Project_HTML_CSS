@@ -151,7 +151,7 @@
 	width: 100%;
 	margin-bottom: 44px;
 	border: transparent;
-
+	padding-bottom: 76px;
 	font-family: "Roboto", sans-serif;
 	font-weight: 400;
 	font-size: 16px;
@@ -277,8 +277,8 @@ textarea {
 
 .worktime-text {
 	position: relative;
-    margin-bottom: 20px;
-    text-transform: uppercase;
+	margin-bottom: 20px;
+	text-transform: uppercase;
 	color: $prime-white-color;
 	&::before {
 		@extend %before;
