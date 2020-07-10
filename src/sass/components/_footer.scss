@@ -280,7 +280,7 @@
 		padding: 56px 39px;
 	}
 	@media screen and (min-width: 1200px) {
-		padding: 56px 55px;
+		padding: 56px 15px;
 	}
 }
 .social-footer {
@@ -301,13 +301,17 @@
 		color: $prime-orange-color;
 	}
 }
+
 .social-footer-item.insta {
 	&::before {
 		@extend %before;
+		@media screen and (max-width: 322px) {
+			margin-right: 18px;
+		}
 	}
 }
 .copyright-text {
-	margin-right: 50%;
+	margin-right: 45%;
 
 	@media screen and (min-width: 768px) {
 		margin-right: auto;
