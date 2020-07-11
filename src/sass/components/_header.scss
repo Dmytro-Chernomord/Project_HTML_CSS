@@ -11,20 +11,16 @@
 	@media screen and (min-width: 768px) {
 		width: 159px;
 		height: 680px;
-		left: 0px;
-		top: 0px;
 		background: $prime-white-color;
 		position: relative;
 	}
 }
 
 .header {
-	padding: 40px 0;
 	width: 100%;
 
 	@media screen and (max-width: 767px) {
 		padding: 48px 31px;
-		top: 0;
 		min-height: 580px;
 	}
 	@media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -89,8 +85,11 @@
 	@media screen and (min-width: 768px) {
 		position: absolute;
 		left: 32px;
-		top: 32px;
+		top: 40px;
 		fill: $prime-black-color;
+	}
+	@media screen and (min-width: 1200px) {
+		top: 32px;
 	}
 }
 

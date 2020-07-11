@@ -6,10 +6,12 @@
 	position: absolute;
 	right: 31px;
 	top: 48px;
+	transform: translateY(20%);
 	&-cross {
 		position: fixed;
 		top: 48px;
 		right: 31px;
+		transform: translateY(20%);
 		@media screen and (min-width: 768px) {
 			display: none;
 		}
