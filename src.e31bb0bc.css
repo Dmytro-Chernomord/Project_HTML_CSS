@@ -148,13 +148,10 @@ button {
   padding: 0;
   border: none;
   z-index: 2;
-  position: absolute;
-  right: 31px;
-  top: 48px;
 }
 .menu-button-cross {
   position: fixed;
-  top: 48px;
+  top: 55px;
   right: 31px;
 }
 @media screen and (min-width: 768px) {
@@ -480,15 +477,12 @@ button {
   .side-bar {
     width: 159px;
     height: 680px;
-    left: 0px;
-    top: 0px;
     background: #ffffff;
     position: relative;
   }
 }
 
 .header {
-  padding: 40px 0;
   width: 100%;
   background-image: url(/mobile3-hero1x-min.007bd18b.jpg), url(/mobile2-hero1x-min.c17af20a.jpg);
   background-repeat: no-repeat;
@@ -498,7 +492,6 @@ button {
 @media screen and (max-width: 767px) {
   .header {
     padding: 48px 31px;
-    top: 0;
     min-height: 580px;
   }
 }
@@ -564,8 +557,13 @@ button {
   .logo {
     position: absolute;
     left: 32px;
-    top: 32px;
+    top: 40px;
     fill: #303030;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    top: 32px;
   }
 }
 
