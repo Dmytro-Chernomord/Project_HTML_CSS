@@ -565,6 +565,12 @@ button {
   .logo {
     top: 32px;
   }
+  .logo svg {
+    display: block;
+  }
+}
+.logo > svg {
+  display: block;
 }
 
 @media screen and (max-width: 767px) {
