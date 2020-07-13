@@ -27,18 +27,13 @@
 .section-description.price-subtitle {
 	color: $header-color;
 	&::before {
+
 		background-color: $header-color;
 	}
 }
 
 .price-title {
 	margin-bottom: 44px;
-
-	font-family: Raleway, sans-serif;
-	font-weight: 700;
-	font-size: 42px;
-	line-height: 1.17;
-	letter-spacing: 0.05em;
 	color: $prime-white-color;
 }
 .price-list {

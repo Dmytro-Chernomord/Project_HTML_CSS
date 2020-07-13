@@ -8,24 +8,14 @@
 	&-block {
 		margin-bottom: 79px;
 	}
+
 	&-title {
-		font-family: Raleway, sans-serif;
-		font-weight: 700;
-		font-size: 42px;
-		line-height: 1.17;
-		letter-spacing: 0.05em;
 		margin-bottom: 20px;
-		color: $prime-black-color;
 		@media screen and (min-width: 768px) and (max-width: 1199px) {
 			padding-right: 269px;
 		}
 	}
 	&-text {
-		font-weight: normal;
-		font-size: 18px;
-		line-height: 1.67;
-		letter-spacing: 0.02em;
-		color: $primary-text-color;
 		@media screen and (min-width: 768px) and (max-width: 1199px) {
 			padding-right: 189px;
 		}

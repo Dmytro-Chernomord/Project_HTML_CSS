@@ -1,3 +1,4 @@
+
 %before {
 	content: "";
 	position: absolute;
@@ -10,6 +11,42 @@
 	width: 60px;
 	height: 1px;
 	background-color: $prime-black-color;
+
+.section-title {
+	font-family: Raleway, sans-serif;
+	font-weight: 700;
+	font-size: 42px;
+	line-height: 1.18;
+	letter-spacing: 0.05em;
+	color: $prime-black-color;
+}
+
+.text-section {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.62;
+	letter-spacing: 0.02em;
+	color: $primary-text-color;
+	text-transform: uppercase;
+	@media screen and (min-width: 1200px) {
+		font-size: 18px;
+		line-height: 1.67;
+		max-width: 500px;
+	}
+}
+
+.before {
+	&::before {
+		content: "";
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 20px;
+		margin-top: -1px;
+		width: 60px;
+		height: 1px;
+		background-color: $prime-black-color;
+	}
+
 }
 .section-description {
 	position: relative;

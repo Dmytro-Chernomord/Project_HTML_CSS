@@ -1,3 +1,4 @@
+
 .portfolio {
 	text-align: center;
 	@media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -26,6 +27,7 @@
 		&:nth-last-child(-n + 2) {
 			margin-bottom: 0;
 		}
+
 	}
 	@media screen and (min-width: 1200px) {
 		width: calc((100% - 30px) / 2);
@@ -35,7 +37,9 @@
 		&:hover,
 		&:focus {
 			z-index: 2;
+
 			transform: scale(1.1);
+
 		}
 	}
 }

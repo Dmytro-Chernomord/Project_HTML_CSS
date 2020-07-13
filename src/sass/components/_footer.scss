@@ -18,20 +18,10 @@
 		justify-content: space-between;
 		min-width: 1200px;
 	}
-	h2 {
-		font-size: 42px;
-		line-height: 1.67;
-		letter-spacing: 0.05em;
-	}
 }
 .footer-title {
-	font-family: Raleway, sans-serif;
 	color: $prime-white-color;
 	margin-bottom: 40px;
-	font-weight: 700;
-	font-size: 28px;
-	line-height: 1.18;
-	letter-spacing: 0.05em;
 }
 
 .footer-form,
@@ -189,7 +179,7 @@ textarea {
 }
 
 .checkbox:focus .checkbox-name {
-	top: 10;
+	top: 10px;
 }
 
 .footer form {
@@ -321,12 +311,14 @@ textarea {
 	}
 }
 
+
 .section-description.insta {
 	text-transform: none;
 	padding-left: 100px;
 	&::before {
 		top: 9px;
 		margin-top: 0;
+
 		@media screen and (max-width: 322px) {
 			margin-right: 18px;
 		}
