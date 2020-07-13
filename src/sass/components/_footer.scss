@@ -98,7 +98,8 @@
 
 		background-color: transparent;
 
-		transition: 150ms linear;
+		transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 
 		&:focus + .input-name {
 			color: $prime-white-color;
@@ -146,7 +147,9 @@
 	line-height: 1.36;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
-	transition: 150ms linear;
+
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .message {
@@ -166,7 +169,7 @@
 
 	background-color: transparent;
 
-	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 	&:focus + .input-name {
 		color: $prime-white-color;
@@ -285,7 +288,9 @@ textarea {
 	color: $prime-white-color;
 	&::before {
 
+
 		background-color: $input-color;
+
 
 	}
 }
