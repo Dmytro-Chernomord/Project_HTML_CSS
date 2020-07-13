@@ -238,16 +238,14 @@
 .instagram-header {
 	position: relative;
 	&:before {
-
 		@media screen and (min-width: 768px) {
 			margin-right: 40px;
 		}
-
 	}
 }
 .youtube-header {
 	@media screen and (max-width: 767px) {
-		margin-left: 100px;
+		margin-left: 81px;
 	}
 	@media screen and (min-width: 768px) {
 		margin-left: 40px;
