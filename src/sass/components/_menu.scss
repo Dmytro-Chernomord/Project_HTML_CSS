@@ -3,9 +3,7 @@
 	padding: 0;
 	border: none;
 	z-index: 2;
-	// position: absolute;
-	// right: 31px;
-	// top: 55px;
+
 	&-cross {
 		position: fixed;
 		top: 55px;
@@ -239,7 +237,6 @@
 }
 .instagram-header {
 	&:before {
-		@extend %before;
 		@media screen and (min-width: 768px) {
 			margin-right: 40px;
 		}
@@ -290,7 +287,6 @@
 		}
 
 		&:before {
-			@extend %before;
 			background-color: currentColor;
 			position: absolute;
 			bottom: -8px;
