@@ -90,6 +90,12 @@
 	}
 	@media screen and (min-width: 1200px) {
 		top: 32px;
+		& svg {
+			display: block;
+		}
+	}
+	& > svg {
+		display: block;
 	}
 }
 
