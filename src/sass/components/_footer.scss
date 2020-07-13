@@ -18,20 +18,10 @@
 		justify-content: space-between;
 		min-width: 1200px;
 	}
-	h2 {
-		font-size: 42px;
-		line-height: 1.67;
-		letter-spacing: 0.05em;
-	}
 }
 .footer-title {
-	font-family: Raleway, sans-serif;
 	color: $prime-white-color;
 	margin-bottom: 40px;
-	font-weight: 700;
-	font-size: 28px;
-	line-height: 1.18;
-	letter-spacing: 0.05em;
 }
 
 .footer-form,
@@ -86,7 +76,7 @@
 	}
 }
 
-.checkbox {
+.footer-input {
 	position: relative;
 
 	color: $input-color;
@@ -110,15 +100,30 @@
 
 		transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-		&:focus + .checkbox-name {
+
+		&:focus + .input-name {
 			color: $prime-white-color;
 			top: -15px;
 		}
-		&:not(:placeholder-shown) + .checkbox-name {
+
+		&:not(:placeholder-shown) + .input-name {
 			color: $prime-white-color;
 			top: -15px;
 		}
 	}
+
+	input:invalid {
+		color: rgba(247, 11, 11, 0.979);
+	}
+
+	input:valid + span:after {
+		position: absolute;
+		content: "✓";
+		padding-left: 5px;
+		bottom: 3px;
+		color: $prime-orange-color;
+	}
+
 	@media screen and (min-width: 768px) {
 		display: inline-flex;
 		width: calc((100% - 34px) / 2);
@@ -141,9 +146,10 @@
 	font-size: 11px;
 	line-height: 1.36;
 	letter-spacing: 0.1em;
-
 	text-transform: uppercase;
+
 	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .message {
@@ -179,7 +185,7 @@ textarea {
 	resize: none;
 }
 
-.checkbox.textarea {
+.footer-input.textarea {
 	width: 100%;
 
 	&:hover .message {
@@ -187,7 +193,9 @@ textarea {
 	}
 }
 
-.checkbox:focus .checkbox-name {
+
+.footer-input:focus .input-name {
+
 	top: 10px;
 }
 
@@ -276,14 +284,14 @@ textarea {
 	--color1: currentColor;
 }
 
-.worktime-text {
-	position: relative;
-	margin-bottom: 20px;
-	text-transform: uppercase;
+.section-description.worktime-text {
 	color: $prime-white-color;
 	&::before {
-		@extend %before;
+
+
 		background-color: $input-color;
+
+
 	}
 }
 .copyright {
@@ -318,20 +326,26 @@ textarea {
 }
 
 .social-footer-link {
-	margin-left: 20px;
-
 	&:hover,
 	&:focus {
 		color: $prime-orange-color;
 	}
 }
 
-.social-footer-item.insta {
+
+.section-description.insta {
+	text-transform: none;
+	padding-left: 100px;
 	&::before {
-		@extend %before;
+		top: 9px;
+		margin-top: 0;
+
 		@media screen and (max-width: 322px) {
 			margin-right: 18px;
 		}
+	}
+	.social-footer-link {
+		margin-right: 40px;
 	}
 }
 .copyright-text {

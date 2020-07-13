@@ -5,13 +5,11 @@
 }
 
 .social-item {
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  background-color: $prime-white-color;
-
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	background-color: $prime-white-color;
 }
 
 .social-item:not(:last-child) {
@@ -32,9 +30,9 @@
 }
 .social-link:hover,
 .social-link:focus {
-
-  background-color: $prime-white-color;
-  fill: $prime-orange-color;
- 
-
+	background-color: $prime-white-color;
+	fill: $prime-orange-color;
+}
+.social-link-header.instagram-header {
+	padding-left: 100px;
 }
