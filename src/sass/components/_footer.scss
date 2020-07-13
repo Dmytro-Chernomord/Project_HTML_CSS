@@ -277,13 +277,9 @@ textarea {
 	--color1: currentColor;
 }
 
-.worktime-text {
-	position: relative;
-	margin-bottom: 20px;
-	text-transform: uppercase;
+.section-description.worktime-text {
 	color: $prime-white-color;
 	&::before {
-		@extend %before;
 		background-color: $checkbox-color;
 	}
 }
@@ -319,20 +315,24 @@ textarea {
 }
 
 .social-footer-link {
-	margin-left: 20px;
-
 	&:hover,
 	&:focus {
 		color: $prime-orange-color;
 	}
 }
 
-.social-footer-item.insta {
+.section-description.insta {
+	text-transform: none;
+	padding-left: 100px;
 	&::before {
-		@extend %before;
+		top: 9px;
+		margin-top: 0;
 		@media screen and (max-width: 322px) {
 			margin-right: 18px;
 		}
+	}
+	.social-footer-link {
+		margin-right: 40px;
 	}
 }
 .copyright-text {

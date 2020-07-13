@@ -238,16 +238,14 @@
 	}
 }
 .instagram-header {
+	position: relative;
 	&:before {
 		@extend %before;
-		@media screen and (min-width: 768px) {
-			margin-right: 40px;
-		}
 	}
 }
 .youtube-header {
 	@media screen and (max-width: 767px) {
-		margin-left: 80px;
+		margin-left: 100px;
 	}
 	@media screen and (min-width: 768px) {
 		margin-left: 40px;
