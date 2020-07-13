@@ -24,24 +24,11 @@
 	}
 }
 
-.price-subtitle {
-	position: relative;
-	margin-bottom: 20px;
-
-	font-weight: 600;
-	font-size: 11px;
-	line-height: 1.36;
-	letter-spacing: 0.1em;
-	text-transform: uppercase;
+.section-description.price-subtitle {
 	color: $header-color;
 	&::before {
-		position: absolute;
-		top: 7px;
-		background-color: $header-color;
-	}
 
-	> p {
-		padding-left: 80px;
+		background-color: $header-color;
 	}
 }
 

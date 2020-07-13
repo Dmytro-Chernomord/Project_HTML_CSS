@@ -8,29 +8,7 @@
 	&-block {
 		margin-bottom: 79px;
 	}
-	&-info {
-		position: relative;
-		font-weight: 600;
-		font-size: 11px;
-		line-height: 1.36;
-		letter-spacing: 0.1em;
-		text-transform: uppercase;
-		margin-bottom: 20px;
-		& > p {
-			color: $prime-black-color;
-		}
-		@media screen and (max-width: 767px) {
-		}
 
-		&::before {
-			position: absolute;
-			top: 7px;
-		}
-
-		> p {
-			padding-left: 80px;
-		}
-	}
 	&-title {
 		margin-bottom: 20px;
 		@media screen and (min-width: 768px) and (max-width: 1199px) {

@@ -1,13 +1,3 @@
-.potfolio-title {
-	position: relative;
-	margin-bottom: 44px;
-	color: $prime-black-color;
-	&:before {
-		position: absolute;
-		top: 7px;
-		margin-top: 0;
-	}
-}
 
 .portfolio {
 	text-align: center;
@@ -37,11 +27,7 @@
 		&:nth-last-child(-n + 2) {
 			margin-bottom: 0;
 		}
-		&:hover,
-		&:focus {
-			z-index: 2;
-			transform: scale(1.25);
-		}
+
 	}
 	@media screen and (min-width: 1200px) {
 		width: calc((100% - 30px) / 2);
@@ -51,7 +37,9 @@
 		&:hover,
 		&:focus {
 			z-index: 2;
-			transform: scale(1.25);
+
+			transform: scale(1.1);
+
 		}
 	}
 }
