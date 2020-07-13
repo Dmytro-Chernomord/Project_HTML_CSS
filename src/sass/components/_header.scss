@@ -138,6 +138,9 @@
 	font-size: 48px;
 	line-height: 1.17;
 	letter-spacing: 0.05em;
+	@media screen and (max-width: 479px) {
+		font-size: 42px;
+	}
 	@media screen and (min-width: 1200px) {
 		font-size: 72px;
 		line-height: 1.18;
