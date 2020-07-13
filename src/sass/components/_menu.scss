@@ -137,9 +137,10 @@
 	}
 }
 
-.button-light.is-menu {
+.btn.is-menu {
 	@media screen and (max-width: 767px) {
 		width: 194px;
+		color: $prime-black-color;
 	}
 
 	@media screen and (min-width: 768px) {
