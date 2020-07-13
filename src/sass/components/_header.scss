@@ -125,14 +125,13 @@
 .section-description.is-header {
 	color: $header-color;
 	&:before {
-
 		@extend %before;
-
 
 		background-color: $header-color;
 	}
 }
 .header-title {
+	font-family: Raleway, sans-serif;
 	color: $prime-white-color;
 	margin-bottom: 20px;
 	font-weight: 700;

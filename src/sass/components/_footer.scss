@@ -100,7 +100,6 @@
 
 		transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-
 		&:focus + .input-name {
 			color: $prime-white-color;
 			top: -15px;
@@ -149,7 +148,6 @@
 	text-transform: uppercase;
 
 	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .message {
@@ -193,9 +191,7 @@ textarea {
 	}
 }
 
-
 .footer-input:focus .input-name {
-
 	top: 10px;
 }
 
@@ -287,11 +283,7 @@ textarea {
 .section-description.worktime-text {
 	color: $prime-white-color;
 	&::before {
-
-
 		background-color: $input-color;
-
-
 	}
 }
 .copyright {
@@ -332,14 +324,10 @@ textarea {
 	}
 }
 
-
 .section-description.insta {
 	text-transform: none;
 	padding-left: 100px;
 	&::before {
-		top: 9px;
-		margin-top: 0;
-
 		@media screen and (max-width: 322px) {
 			margin-right: 18px;
 		}
