@@ -8,11 +8,19 @@
 		<p class="modal-form-title">Онлайн-запись</p>
 		<form>
 			<label class="modal-input">
-				<input class="test" type="text" placeholder=" " />
+				<input
+					class="test"
+					type="text"
+					placeholder=" "
+					minlength="2"
+					maxlength="25"
+					pattern="^[a-zA-Z-А-Яа-яЁё\s]+$"
+					required
+				/>
 				<span class="input-name">Имя*</span>
 			</label>
 			<label class="modal-input">
-				<input class="test" type="tel" placeholder=" " />
+				<input class="test" type="tel" placeholder=" " pattern="[0-9]{10}" required />
 				<span class="input-name">Телефон*</span>
 			</label>
 			<div class="modal-input textarea">

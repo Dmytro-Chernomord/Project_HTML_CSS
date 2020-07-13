@@ -85,7 +85,6 @@
 
 	color: $input-color;
 
-
 	input {
 		width: 100%;
 		margin-bottom: 44px;
@@ -107,6 +106,17 @@
 		&:not(:placeholder-shown) + .input-name {
 			color: $prime-white-color;
 			top: -15px;
+		}
+		&:invalid {
+			color: #f30909;
+		}
+
+		&:valid + span:after {
+			position: absolute;
+			content: "✓";
+			padding-left: 5px;
+			bottom: 3px;
+			color: $prime-orange-color;
 		}
 	}
 
