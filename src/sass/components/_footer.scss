@@ -126,7 +126,7 @@
 	@media screen and (min-width: 768px) {
 		display: inline-flex;
 		width: calc((100% - 34px) / 2);
-		&:first-of-type {
+		&:first-child {
 			margin-right: 30px;
 		}
 	}
@@ -327,6 +327,7 @@ textarea {
 .section-description.insta {
 	text-transform: none;
 	padding-left: 100px;
+	margin-bottom: 0;
 	&::before {
 		@media screen and (max-width: 322px) {
 			margin-right: 18px;

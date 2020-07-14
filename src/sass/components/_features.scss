@@ -63,11 +63,13 @@
 		width: calc((100% - 30px * 1) / 2);
 		height: 133px;
 		padding: 20px;
-		margin-bottom: 30px;
 		display: inline-block;
 		&:nth-child(odd) {
 			margin-right: 30px;
 			margin-top: -35px;
+		}
+		&:nth-child(-n + 2) {
+			margin-bottom: 30px;
 		}
 	}
 }
